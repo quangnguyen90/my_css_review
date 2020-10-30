@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.cha{
+    width: 300px;
+    background-color: burlywood;
+    height: auto;
+}
+.con1 {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+}
+.con2 {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
+.con3 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+}
+.container {
+    display: inline-block;
+    margin-right: -4px;
+}
