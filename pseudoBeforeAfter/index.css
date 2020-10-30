@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.one::before {
+    content: "\f42c";
+    color: blue;
+    padding: 10px;
+    font-family: "Font Awesome\ 5 Brands";
+}
+
+.one::after {
+    content: "";
+    color: red;
+    padding: 10px;
+    background-image: url("man.jpg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.path::after {
+    content: " / ";
+}
+
+.text:hover {
+    color: blueviolet;
+    width: 100px;
+    height: 200px;
+    background-color: cadetblue;
+    cursor: pointer;
+}
