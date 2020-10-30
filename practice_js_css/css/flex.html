@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box demo</title>
+    <style>
+        .box {
+            /*hien thi item theo chieu ngang*/
+            /*or inline-flex*/
+            display: flex;
+
+            /*huong hien thi cua item*/
+            /*row (D) | row-reverse | column |  column reverse*/
+            flex-direction: row;
+
+            /*cho item tu dong rot xuong khi resize browser*/
+            /*nowrap (D) | wrap | wrap-reverse*/
+            flex-wrap: nowrap;
+
+            /*canh chinh cho item o giua, trai hay phai*/
+            /*flex-start (D) | flex-end | center | space-between | space-around*/
+            /*phu thuoc flex-direction: row|column, item hien doc|ngang*/
+            justify-content: center;
+
+            /*flex-start | flex-end | center | stretch(default) | baseline(typography)*/
+            /*phu thuoc flex-direction: : row|column, nếu row: item canh chinh doc| nếu column: item canh chinh ngang
+            /*nguoc lai voi justify-content*/
+            /* align-items: flex-end; */
+
+            width: 100%;
+            height: auto;
+
+            background-color: #1a1c28;
+        }
+
+        .item {
+            width: 150px;
+            /*thiet lap chieu rong hoac chieu cao cho item, phu thuoc vao flex-direction*/
+            /*flex-direction la row thi tuong ung voi width*/
+            /*flex-direaction la column thi tuong ung voi height*/
+            /*flex-basis se de len width || height*/
+            flex-basis: 90px;
+
+            height: 150px;
+
+            /* giong như grid, col trong boostrap, 
+             * dan hang cac item vua khop width cua container 
+             * default = 0, neu = 1 thi 1 hang item chia deu ti le
+             */
+            flex-grow: 1;
+
+            /* nguoc lai flex-grow, cho co item lai khi no resize chuong trinh
+             * cung co ti le nhu grid, col trong boostrap
+             */
+            flex-shrink: 0;
+
+            /* flex: flex-grow flex-shrink flex-basis
+             * la su ket hop cua cả 3 flex kia
+             */
+        }
+
+        .item:nth-of-type(1) {
+            background-color: #bf4470;
+            /*Danh thu tu hien thi cho cac item*/
+            order: 3;
+
+            /*canh chinh vi tri hien thi cho rieng 1 item*/
+            /*align-self:center*/
+
+            /* giong như grid, col trong boostrap*/
+            flex-grow: 3;
+        }
+
+        .item:nth-of-type(2) {
+            background-color: #ffa400;
+            order: 2;
+        }
+
+        .item:nth-of-type(3) {
+            background-color: #07a787;
+            order: 1;
+        }
+
+        .item:nth-of-type(4) {
+            background-color: red;
+            order: 5;
+        }
+
+        .item:nth-of-type(5) {
+            background-color: blue;
+            order: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>
