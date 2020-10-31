@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    background-color: coral;
+    position: fixed;
+}
+
+.menu {
+    width:  1200px;
+    margin: 0 auto;
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+}
+
+li {
+    list-style: none;
+    float: left;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    height: 30px;
+    background-color: gray;
+    position: relative;
+}
+
+.menu li:hover {
+    background-color: gold;
+    color: black;
+    cursor: pointer
+}
+
+.menu li:hover>.sub-menu{
+    display: block;
+}
+
+.pl-100 {
+    left: 100px;
+    top: 0px;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
