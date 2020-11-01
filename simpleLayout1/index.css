@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 50px;
+    background-color: green;
+}
+
+.nav {
+    height: 50px;
+    background-color: greenyellow;
+}
+
+.content {
+    height: 500px;
+}
+
+.left-block, .right-block {
+    height: 100%;
+    float: left;
+}
+
+.left-block {
+    width: 30%;
+    background-color: grey;
+}
+
+.right-block {
+    width: 70%;
+    background-color: khaki;
+}
+
+.footer {
+    height: 100px;
+    background-color: hotpink;
+}
+
