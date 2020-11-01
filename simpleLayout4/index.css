@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 50px;
+    background-color: green;
+}
+
+.content {
+    height: 500px;
+}
+
+.left-block, .middle-block, .right-block {
+    height: 100%;
+    float: left;
+}
+
+.left-block {
+    width: 10%;
+    background-color: grey;
+}
+
+.middle-block{
+    width: 80%;
+    background-color: aqua;
+}
+
+.pre-body {
+    height: 10%;
+    background-color: black;
+}
+
+.content-body {
+    height: 80%;
+    background-color: brown;
+}
+
+.post-body {
+    height: 10%;
+    background-color: burlywood;
+}
+
+.right-block {
+    width: 10%;
+    background-color: khaki;
+}
+
+.footer {
+    height: 50px;
+    background-color: hotpink;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
