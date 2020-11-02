@@ -14,10 +14,6 @@
     background-color: olive;
 }
 
-.content {
-    height: 500px;
-}
-
 .left-block, .right-block {
     height: 100%;
     float: left;
@@ -26,11 +22,13 @@
 .left-block {
     width: 30%;
     background-color: grey;
+    height: 500px;
 }
 
 .right-block {
     width: 70%;
     background-color: khaki;
+    height: 500px;
 }
 
 .main-content {
@@ -46,5 +44,11 @@
 .footer {
     height: 50px;
     background-color: hotpink;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 

@@ -9,10 +9,6 @@
     background-color: green;
 }
 
-.content {
-    height: 500px;
-}
-
 .left-block, .middle-block, .right-block {
     height: 100%;
     float: left;
@@ -21,11 +17,13 @@
 .left-block {
     width: 10%;
     background-color: grey;
+    height: 500px;
 }
 
 .middle-block{
     width: 80%;
     background-color: aqua;
+    height: 500px;
 }
 
 .pre-body {
@@ -46,6 +44,7 @@
 .right-block {
     width: 10%;
     background-color: khaki;
+    height: 500px;
 }
 
 .footer {
