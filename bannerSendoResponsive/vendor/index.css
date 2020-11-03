@@ -1,0 +1,25 @@
+div{ 
+    border: 1px solid black;
+}
+
+.info {
+    height: 30px;
+    background-color: crimson;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.header {
+    height: 100px;
+    background-color: darkred;
+}
+
+.content {
+    height: 300px;
+}
+
+.category {
+    height: 100px;
+}
