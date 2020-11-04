@@ -56,3 +56,8 @@
         min-width: auto !important;
     }
 }
+
+.icon-cart {
+    line-height: 40px;
+    text-align: center;
+}
