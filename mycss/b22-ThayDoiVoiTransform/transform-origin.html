@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B22 - Thay đổi hình dạng với transform và transform-origin</title>
+	<link rel="stylesheet" href="">
+	<style>
+		img {
+		  transition: 1s ease-in-out;
+		  display: block;
+		}
+
+		.rotate:hover {
+		  transform: rotate(5turn);
+		  -moz-transform: rotate(5turn);
+		  -webkit-transform: rotate(5turn);
+		  
+		  transform-origin: 300% 300%;
+		  -moz-transform-origin: 300% 300%;
+		  -webkit-transform-origin: 300% 300%;
+		}
+
+		.scale:hover {
+		  transform: scaleX(-1.5);
+		  -moz-transform: scaleX(-1.5);
+		  -webkit-transform: scaleX(-.5);
+		  
+		  transform-origin: 150% 150%;
+		  -moz-transform-origin: 150% 150%;
+		  -webkit-transform-origin: 150% 150%;
+		}
+
+		.skew:hover {
+		  transform: skewX(-65deg);
+		  -moz-transform: skewX(-65deg);
+		  -webkit-transform: skewX(-65deg);
+		  
+		  transform-origin: 100% 100%;
+		  -moz-transform-origin: 100% 100%;
+		  -webkit-transform-origin: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<em>Tùy chỉnh tâm hình dạng với transform-origin</em>
+	
+	<img class="rotate" src="http://i.imgur.com/6xM7wdY.png" />
+	<img class="scale" src="http://i.imgur.com/6xM7wdY.png" />
+	<img class="skew" src="http://i.imgur.com/6xM7wdY.png" />
+
+	<p>Một thuộc tính thú vị nữa mà bạn có thể dùng kèm theo transform đó là transform-origin, nó sẽ cho phép bạn dịch chuyển phần tử dựa vào kiểu thay đổi hình dạng ở transform. Nói nghe có vẻ khó hiểu, ví dụ bạn sử dụng rotate() để xoay ảnh và khi dùng thêm transform-origin thì nó sẽ cho phép bạn chỉnh độ lớn của vòng xoay tính từ tâm phần tử. Thuộc tính transform-origin phải được dùng kèm với transform và có thể áp dụng cho bất kỳ hàm nào.
+
+	<br>Thuộc tính transform-origin có hai giá trị là X (phương thẳng đứng) và Y (phương nằm ngang) và giá trị nó sẽ dựa vào kích thước của phần tử.
+
+
+	<br>transform-origin: 100% 50%;</p>
+</body>
+</html>

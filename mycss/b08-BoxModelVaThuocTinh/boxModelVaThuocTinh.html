@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B8 - Box Model và các thuộc tính</title>
+	<link rel="stylesheet" href="">
+	<style>
+		body{
+			font-size: 20px;
+			text-align: center;
+			font-family: sans-serif;
+		}
+
+		#content1{
+			background: #333;
+			color: white;
+			padding: 10px 20px;
+			margin-bottom: 1em;
+		}
+
+		#content2{
+			border: 1px solid red;
+			margin-bottom: 1em;
+		}
+		
+		#box1{
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			margin-bottom: 1em;
+			color: white;
+		}
+
+		#box2{
+			background-color: blue;
+			width: 100px;
+			height: 100px;
+			margin-bottom: 1em;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<em>Box Model và các thuộc tính</em>
+	<!-- 
+		Kỹ thuật Box Model trong CSS bao gồm 4 phần quan trọng đó là:
+		4 tham so
+		Margin: Khoảng cách tính từ bên ngoài của phần tử. top right bottom left;
+		Border: Đường viền của phần tử. top right bottom left;
+		Padding: Khoảng cách tính từ bên trong của phần tử. top right bottom left;
+		Content: Nội dung trong phần tử.
+
+		2 tham so
+		margin: top_bottom left_right;
+		border: top_bottom left_right;
+		padding: top_bottom left_right;
+	-->
+	<div id="content1">Đây là Content</div>
+
+	<!-- Trong border có hỗ trợ một số type nhưsolid,dotted, double,groove,ridge, inset vàoutset. -->
+	<div id="content2">Đây là border content</div>
+	
+	<!-- Trong khi Padding có nhiệm vụ tạo khoảng cách giữa phần Content với Border thì Margin sẽ có tác dụng tạo khoảng cách từ Border trở ra ngoài, nói dễ hiểu thì nó sẽ giúp bạn tinh chỉnh khoảng cách giữa các phần tử với nhau-->
+	<div id="box1">
+		box 1
+	</div>
+
+	<div id="box2">
+		box 2
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B13 - Reset CSS</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<em>Reset CSS</em><br>
+	khi viết CSS cho website, bạn nên đưa tất cả các giá trị của các phần tử trên website về bằng 0 hết và xóa một số định dạng có sẵn để khi cần chúng ta sẽ dùng CSS viết lại theo ý của mình để đảm bảo nó hiển thị tốt trên tất cả các trình duyệt. Việc làm này người ta gọi là Reset CSS.
+	<br>
+	Reset CSS như thế nào?
+	<br>
+	Nếu bạn muốn tự reset CSS đơn giản nhất thì hãy viết đoạn sau vào tập tin CSS là có thể đưa toàn bộ giá trị liên quan tới Box Model về 0.
+	<br>
+	* {<br>
+	padding: 0;<br>	 
+	margin: 0;<br>
+	border: none;<br>
+	}
+	<br>
+Nhưng như vậy có vẻ không tối ưu cho lắm, thay vì reset CSS như vậy thì chúng ta sẽ dùng các bộ Reset CSS có sẵn mà nhiều designer/developer chuyên nghiệp thường sử dụng.
+<br>
+Một số bộ Reset CSS thông dụng
+<br>
+<a href="https://github.com/necolas/normalize.css/blob/master/normalize.css" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/necolas/normalize.css/blob/master/normalize.css', 'normalize.css');" title="normalize.css" rel="external nofollow" target="_blank">normalize.css</a>
+<br>
+<a href="http://meyerweb.com/eric/tools/css/reset/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://meyerweb.com/eric/tools/css/reset/', 'Reset CSS 2.0 by Eric Meyer');" title="Reset CSS" rel="external nofollow" target="_blank">Reset CSS 2.0 by Eric Meyer</a>
+</body>
+</html>

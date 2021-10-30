@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B4 - Các thuộc tính cho Text (văn bản)</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		#text-left {text-align: left;}
+		#text-right {text-align: right;}
+		#text-center {text-align: center;}
+		#text-justify {text-align: justify;}
+
+		#underline{text-decoration:underline;}
+		#overline{text-decoration:overline}
+		#line-through{text-decoration: line-through;}
+		#mix{text-decoration: underline overline line-through; }
+
+		#text{
+			background: blue;
+			width: 500px;
+			color: white;
+		}	
+
+		#text p {
+			text-indent: 15%;
+			text-overflow: clip;
+			overflow: hidden;
+			white-space: nowrap;
+		}	
+
+		#title{
+			text-shadow: blue 2px 3px 4px;
+			color: white;
+		}
+
+		#multi-shadow{
+			text-shadow: red 2px -1px 3px, blue -2px 1px 2px;
+			color: white;
+		}
+
+		#uppercase{text-transform: uppercase;}
+		#lowercase{text-transform: lowercase;}
+		#capitalize{text-transform: capitalize;}
+
+	</style>
+</head>
+<body>
+	<em>Các thuộc tính cho Text (văn bản)</em>
+	<!-- text align -->
+	<p id="text-left">Đây là kiểu text-align: left</p>
+	<p id="text-right">Đây là kiểu text-align: right</p>
+	<p id="text-center">Đây là kiểu text-align: center</p>
+	<p id="text-justify">Đây là kiểu text-align: justify</p>
+	
+	<!-- text decoration -->
+	<p id="underline">Đây là kiểu underline</p>
+	<p id="overline">Đây là kiểu overline</p>
+	<p id="line-through">Đây là kiểu line-through</p>
+	<p id="mix">Sử dụng cùng lúc nhiều kiểu</p>
+	
+	<!-- text indent -->
+	<div id="text">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore deleniti, modi aliquid temporibus voluptatum, et tempore nihil facilis ipsa nostrum distinctio sint vel! Natus rerum aliquid culpa provident, eaque ipsa.</p>
+	</div>
+	
+	<!-- text shadow -->
+	<p id="title">Đây là tiêu đề</p>
+	<p id="multi-shadow">Tiêu đề có nhiều bóng đổ</p>
+	
+	<!-- text transform -->
+	<p id="uppercase">phạm ngọc thạch</p>
+	<p id="lowercase">Phạm Ngọc Thạch</p>
+	<p id="capitalize">phạm ngọc thạch</p>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B22 - Thay đổi hình dạng với transform và transform-origin</title>
+	<link rel="stylesheet" href="">
+	<style>
+		#rotate:hover img{
+			transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+		}
+
+		#transition img {
+			transition: 1s ease-in-out;
+		}
+
+		#transition:hover img{
+			transform: rotate(3turn);
+			-webkit-transform: rotate(3turn);
+			-moz-transform: rotate(3turn);
+		}
+	</style>
+</head>
+<body>
+	<em>Rotate</em>
+		<div id="rotate">
+			<img src="http://i.imgur.com/6xM7wdY.png" alt="">
+		</div>
+		<h3>Hiệu ứng có kèm transition</h3>
+		<div id="transition">
+			<img src="http://i.imgur.com/6xM7wdY.png" alt="">
+		</div>
+
+		<p>			
+			Với hàm rotate() bạn có thể thiết lập một đối tượng bị xoay theo độ góc. Ở hàm này bạn có thể thiết lập giá trị kiểu  [n]deg (thiết lập giá trị góc, tức là độ) hoặc [n]turn (1 turn = 360 độ)
+		</p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B16 - Position và Absolute – Relative</title>
+	<link rel="stylesheet" href="">
+	<style>
+		div{
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+		#container{
+			width: 960px;
+			margin: 0 auto;
+			background-color: #999;
+			border: 1px solid #333;
+			padding: 15px;
+		}
+		#relative{
+			width: 100%;
+			border: 2px dotted #b1b1b1;
+			background-color: #555;
+			height: 300px;
+			position: relative;
+		}
+		#absolute{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<em>Absolute</em>
+	
+	<div id="container">
+		<div id="relative">
+			<img src="http://i.imgur.com/odWztph.jpg" id="absolute"  width="150px" height="auto">
+		</div>
+	</div>
+
+	<br>Các giá trị của thuộc tính position
+
+	<br>Hiện tại position hỗ trợ cho một số giá trị như sau:
+
+	<br>relative: Dùng để thiết lập một phần tử sử dụng các thuộc tính position (xem ở dưới) mà không làm ảnh hưởng đến việc hiển thị ban đầu.
+	<br>absolute: Dùng để thiết lập vị trí của một phần tử nhưng nó sẽ luôn nằm trong một phần tử mẹ đang là relative.
+	<br>fixed: Hiển thị luôn đi theo trình duyệt khi cuộn trang.
+	<br>static: Đưa phần tử về hiển thị theo kiểu mặc định.
+	<br>Sau khi thiết lập một phần tử sử dụng position, chúng ta sẽ sử dụng thêm một số thuộc tính position để căn chỉnh vị trí của nó và giá trị là số kèm theo đơn vị, có 4 thuộc tính position là:top-bottom-left-right
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B5 - Trang trí font chữ cho văn bản</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		p{font-size: 32px}
+		#serif{
+			font-family: serif;  
+			font-style: italic;
+			font-weight: 300px;
+			color: red;
+			font-size: 19px;
+		}
+		#sans-serif{
+			font-family: sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			color: #333333;
+			font-size: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<em>Trang trí font chữ cho văn bản</em>
+	<p id="serif">Đây là font chữ có chân.</p>
+	<p id="sans-serif">Đây là font chữ không có chân.</p>
+
+	<br>
+	Các font cơ bản trên máy tính bao gồm:<br>
+	Serif<br>
+		Palatino<br>
+		Time New Roman<br>
+		Georgia<br>
+	Sans Serif<br>
+		Arial<br>
+		Helvetica<br><br>
+		Verdana<br>
+		Tahoma<br>
+	Cú pháp: font-family: tên-font, tên-font-backup, tên-font-backup,...;<br>
+
+	Nếu bạn có nhu cầu tham khảo các font chữ phổ biến nhất trên máy tính và copy đoạn code sử dụng font chữ tối ưu nhất thì bạn có thể tra cứu tại trang www.cssfontstack.com để lấy font stack chuẩn và an toàn hơn để chắc chắn website mình hiển thị tốt với đại đa số người dùng, cả Windows và Mac.<br>
+
+	font-style<br>
+
+	Thuộc tính font-style là để bạn thiết lập chữ viết được hiển thị dưới dạng in nghiêng hoặc bình thường. Thuộc tính này có 3 giá trị là normal (bình thường), italic (in nghiêng), oblique (cũng là nghiêng).<br>
+
+	In đậm chữ viết với font-weight<br>
+
+	Việc tùy chỉnh in đậm chữ viết có hẳn một thuộc tính riêng đó là font-weight. Giá trị của nó là là từ100,200, 300,….900, số càng lớn thì chữ càng đậm và “mập” ra.<br>
+
+	Ngoài ra nếu bạn không thích dùng số thì bạn có thể dùng các giá trị kiểu chữ lànormal,bold. Nếu phần tử mẹ của nó đã được thiết lập font-weight thì có thể dùng giá trị lighter và bolder để thiết lập độ đậm tương đối.
+</html>

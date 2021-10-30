@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B10 - Tìm hiểu Box Sizing</title>
+	<link rel="stylesheet" href="">
+	<style>
+		div{
+			background-color: blue;
+			color: white;
+			border: 2px solid red;
+			width: 300px;
+			height: 200px;
+			margin-bottom: 32px;
+		}
+
+		#boxsizing{
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<em>Tìm hiểu box-sizing</em>
+	<div id="non-boxsizing">
+		Khung này không bao gồm box-sizing: border-box. Nghĩa là width và height đã bao gồm border và padding.
+	</div>
+	
+	<div id="boxsizing">
+		Khung này đã thiết lập box-sizing: border-box. Nghĩa là width và height không bao gồm border và padding.
+	</div>
+
+	<p>nếu bây giờ bạn muốn làm cho phần tử của mình phải giữ nguyên kích thước mặc dù có cộng thêm padding và border thì sẽ cần phải dùng đến thuộc tính box-sizing.<br> box-sizing là một thuộc tính sẽ giúp bạn có thể tính toán và làm chủ được kích thước của một phần tử dựa vào thuộc tính width và height đã được thiết lập bên trong. Hay nói cách khác, là bạn sẽ muốn thuộc tính width và height là kích thước đã bao gồm border và padding.
+<br>
+Lưu ý về cách viết
+<br>
+box-sizing là một thuộc tính trong CSS3 nên khi viết bạn phải viết thành 3 lần với các tiền tố khác nhau, ví dụ:
+<br>
+===box-sizing: border-box;<br>
+===-moz-box-sizing: border-box;<br>
+===-webkit-box-sizing: border-box;<br>
+<br>
+Trong đó, nếu viết không có tiền tố là dành cho trình duyệt IE8, Opera 7, Firefox và Google chrome bản mới. -webkit là dành cho Google Chrome bản cũ và -moz là dành cho Firefox bản cũ.
+<br>
+Các giá trị của box-sizing
+<br>
+Hiện tại box-sizing có hỗ trợ một số giá trị như sau:
+<br>
+===content-box: Giá trị mặc định, nghĩa là giá trị width và height chỉ áp dụng cho khu vực nội dung bên trong, không bao gồm padding, border và margin.<br>
+===border-box: Khi thiết lập giá trị này, thì width và heigh sẽ bao gồm cho cả phần nội dung, padding và border nhưng không bao gồm margin.<br>
+===padding-box: Với giá trị này thì width và height chỉ bao gồm cho phần nội dung và padding, không bao gồm border và margin.<br>
+Lưu ý: padding-box chỉ có tác dụng với trình duyệt Firefox.
+
+
+ <br>
+Như vậy với ba giá trị này, mình khuyến khích các bạn chỉ nên sử dụng giá trị border-box vì nó rất đầy đủ, dễ tính toán cho website.
+<br>
+
+
+Nên sử dụng box-sizing cho toàn bộ phần tử
+<br>
+Theo kinh nghiệm của mình thì khi viết CSS cho website, bạn hãy sử dụng box-sizing với giá trị là border-box cho toàn bộ các phần tử trong website để các phần tử có kích thước chính xác khi bạn khai báo, tránh việc cộng thêm các phần border và padding sẽ gây ra rắc rối nếu bạn dùng hai cái này thường xuyên.
+<br>
+Để thiết lập box-sizing: content-box cho toàn bộ phần tử, chúng ta sẽ sử dụng vùng chọn là *, nghĩa là bao gồm mọi phần tử.
+<br>
+* {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}</p>
+</body>
+</html>

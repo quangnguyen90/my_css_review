@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B17 - Một vài Pseudo Class đơn giản </title>
+	<link rel="stylesheet" href="">
+	<style>
+		/*==Ví dụ về liên kết ==*/
+		a {
+			color: red;
+			text-decoration: none;
+		}
+		a:hover {
+			color: blue !important; /* Ưu tiên với !important */
+		}
+
+		a:visited {
+			color: purple;
+		}
+
+		a:active{
+			color: green;
+		}
+
+		/*==Ví dụ về các phần tử khác ==*/
+		#box {
+			width: 300px;
+			height: 300px;
+			background: red; 
+		}
+
+		#box:hover{
+			background: blue;
+		}
+		
+		#box:active{
+			background: greens;
+		}
+		
+		/*==Ví dụ thú vị==*/
+		#thu-vi{
+			width: 300px;
+			height: 300px;
+			background: red;
+			transition: margin-left 2s, background 1s;
+			-moz-transition: margin-left 2s, background 1s;
+  			-webkit-transition: margin-left 2s, background 1s;
+		}
+		#thu-vi:hover{
+			margin-left: 500px;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<em>Một vài Pseudo Class đơn giản</em>
+	<h4>Ví dụ về liên kết</h4>
+	<a href="http://hoidap.thachpham.com" target="blank">Forum ThachPham Blog</a>
+
+	<h4>Ví dụ đổi màu block</h4>
+	<div id="box">
+	  
+	</div>
+
+	<h4>Một ví dụ thú vị hơn</h4>
+	Sử dụng thuộc tính transition trong CSS3.
+	<div id="thu-vi">
+	  
+	</div>
+
+	<br>Một số Pseudo Class thông dụng
+
+	<br>:hover – Chọn trạng thái khi rê chuột vào một phần tử.
+	<br>:visited – Được sử dụng cho liên kết, chọn liên kết khi đã được truy cập (dựa vào History trên trình duyệt).
+	<br>:link – Được sử dụng cho liên kết, chọn liên kết khi chưa nhấp vào.
+	<br>:active – Chọn phần tử khi họ chọn/nhấp vào.
+</body>
+</html>

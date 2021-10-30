@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B14 - Tùy biến hiển thị danh sách (List)
+</title>
+	<link rel="stylesheet" href="">
+	<style>
+		body{
+			font-size: 16px;
+		}
+
+		#dics {
+			list-style-type: disc;
+		}
+
+		#square{
+			list-style-type: square;
+		}
+
+		#circle{
+			list-style-type: circle;
+		}
+
+		#decimal{
+			list-style-type: decimal;
+		}
+		
+		.list-style-position{
+			background: #999;
+			width: 100px;
+			height: 50px;
+			padding: 0;
+			margin: 0 auto;
+		}
+
+		#inside{
+			list-style-position: inside;
+		}
+
+		#outside{
+			list-style-position: outside;
+		}
+		
+		#container {
+			padding-left: 5px;
+			margin-left: 15px;
+		}
+
+		#container p {
+			display: list-item;
+			list-style: lower-roman;
+			margin: 0;
+		}
+	</style>
+
+</head>
+<body>
+	<em>Tùy biến hiển thị danh sách (List)</em>
+	<p>Ví dụ về các giá trị cơ bản của list-stype-type.</p>
+	<ul id="dics">
+		<li>dics</li>
+		<li>dics</li>
+	</ul>
+
+	<ul id="square">
+		<li>square</li>
+		<li>square</li>
+	</ul>
+
+	<ul id="circle">
+		<li>circle</li>
+		<li>circle</li>
+	</ul>
+
+	<ul id="decimal">
+		<li>decimal</li>
+		<li>decimal</li>
+	</ul>
+
+
+	<p>Ví dụ về các giá trị cơ bản của list-stype-position.</p>
+	
+	<ul id="inside" class="list-style-position">
+		<li>inside</li>
+	</ul>
+
+	<ul id="outside" class="list-style-position">
+		<li>outside</li>
+	</ul>
+	<br>
+	
+	<p>Ví dụ sử dụng list-style cho các phần tử 3hác</p>
+
+	<div id="container">
+		<p>Item 1</p>
+		<p>Item 2</p>
+		<p>Item 3</p>
+	</div>
+
+	============================================
+	<br>Quy tắt viết thuộc tính list-style
+
+	<br>Ở thuộc tính này, bạn có thể viết giá trị theo thứ tự như sau:
+
+	<br>list-style: <list-style-type> <list-style-position> <list-style-image>;
+	<br>Trong đó, 3 giá trị mình ghi bên trong kia là 3 thuộc tính con của list-style nhưng bạn có thể viết vào thẻ này cùng lúc mà không cần viết từng thuộc tính. Cụ thể:
+
+	<br>list-style-type: Thay đổi loại hiển thị của danh sách.
+	<br>list-style-position: Tùy chỉnh vị trí hiển thị các dấu đầu dòng của mục con nằm bên trong danh sách hoặc bên ngoài danh sách.
+	<br>list-style-image: Sử dụng hình ảnh làm các dấu đầu dòng cho danh sách.
+	<br>Khi biết cách sử dụng 3 thuộc tính con ở trên thì bạn có thể viết nó vào thuộc tính list-style cho gọn nhé.
+
+	<br>list-style-type
+	<br>có một số thuộc tính thông dụng như sau:
+ 
+	<br>disc: Kiểu nút tròn có nền bên trong,
+	<br>circle: Kiểu nút tròn nhưng có viền nhưng không có nền.
+	<br>squre: Kiểu ô vuông có nền.
+	<br>decimal: Kiểu số thứ tự.
+	<br>lower-roman: Kiểu số La Mã in thường.
+	<br>upper-roman: Kiểu số La Mã in hoa.
+	none: Xóa các dấu đầu dòng.
+
+	<br>list-style-position
+
+	<br>Với thuộc tính này chúng ta chỉ có duy nhất hai giá trị là:
+
+	<br>inside: Hiển thị dấu đầu dòng bên trong block.
+	<br>outside: Hiển thị dấu đầu dòng bên ngoài block.
+
+	<br>list-style-image
+	<br>Cách dùng rất đơn giản như sau:
+	<br>list-style-image: url('link ảnh');
+
+	<br>Viết ngắn gọn vào list-style
+	<br>list-style: square inside;
+	<br>list-style: url('hình ảnh') outside;
+</body>
+</html>

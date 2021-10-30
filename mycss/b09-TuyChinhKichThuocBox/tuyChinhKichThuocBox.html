@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B9 - Các thuộc tính tùy chỉnh kích thước </title>
+	<link rel="stylesheet" href="">
+	<style>
+		
+	</style>
+</head>
+<body>
+	<em>Các thuộc tính tùy chỉnh kích thước</em>
+	
+	<table width="100%"><tbody><tr><th>Tên thuộc tính</th><th>Mô tả</th><th>Các kiểu giá trị</th></tr><tr><td>height</td><td>Thiết lập chiều cao của một phần tử.</td><td>auto<i><br> length<br> %<br> </i>inherit</td></tr><tr><td>max-height</td><td>Thiết lập chiều cao tối đa của một phần tử.</td><td>none<br> <i>length<br> %<br> </i>inherit</td></tr><tr><td>max-width</td><td>Thiết lập chiều rộng tối đa của một phần tử.</td><td>none<br> <i>length<br> %<br> </i>inherit</td></tr><tr><td>min-height</td><td>Thiết lập chiều cao tối thiểu của một phần tử.</td><td><i>length<br> %<br> </i>inherit</td></tr><tr><td>min-width</td><td>Thiết lập chiều rộng tối thiểu của một phần tử.</td><td><i>length<br> %<br> </i>inherit</td></tr><tr><td>width</td><td>Thiết lập chiều rộng của phần tử.</td><td>auto<i><br> length<br> %<br> </i>inherit</td></tr></tbody></table>
+
+	Ở cột các kiểu giá trị, length nghĩa là kiểu giá trị kèm đơn vị như px,pt,em, rem và %, none là bỏ thiết lập, auto là tự động tính dựa theo chiều còn lại và inherit là thừa kế giá trị đã thiết lập trước đó cho thuộc tính này.
+
+	Và xin lưu ý thêm là bạn chỉ có thể thiết lập kích thước với các phần tử Block, Table và các đối tượng (hình ảnh, video, flash,…) chứ không thể thiết lập cho các phần tử Inline.
+
+	Đối với các thuộc tính dạng min-*, max-* thì nghĩa là nó sẽ căn độ dài của phần tử dựa vào các nội dung bên trong nhưng sẽ có kích thước tối thiểu/tối đa được phép sử dụng. Ví dụ bạn có phần #content, bên trong #content bạn có phần #post và thiết lập chiều rộng cho #post là 500px. Thì nếu bạn đặt thuộc tính max-width cho #content là 400px thì cái thằng #post nó cũng chỉ giãn được tối đa là 400px chứ không thể hơn.
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B21 - Tạo chuyển động với transition</title>
+	<link rel="stylesheet" href="">
+	<style>
+		#box {
+		  width: 300px;
+		  height: 300px;
+		  background: red;
+		  transition: margin-left 2s 0.5s ease-in-out;
+		  -moz-transition: margin-left 2s 0.5s ease-in-out;
+		  -webkit-transition: margin-left 2s 0.5s ease-in-out;
+		}
+
+		#box:hover {
+		  margin-left: 300px;
+		}
+		
+		#box2 {
+		  	width: 300px;
+		  	height: 300px;
+		  	background: red;
+			transition: margin-left 2s, background-color 1s;
+		 	-moz-transition: margin-left 2s, background-color 1s;
+			-webkit-transition: margin-left 2s, background-color 1s;
+		}
+
+		#box2:hover {
+		    margin-left: 500px;
+  			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<em>Tạo chuyển động với transition</em>
+	<div id="box"></div>
+
+	<div id="box2"></div>
+
+	<br>Cấu trúc khai báo transition như sau:
+	<br>transition: [thuộc tính chuyển động] [thời gian chuyển động] [thời gian delay] [kiểu chuyển động];
+	<br>Lưu ý rằng transition là thuộc tính CSS3 nên bạn cần nên khai báo thêm hai thuộc tính tương tự kèm hai tiền tố -moz- và -webkit- để nó hoạt động tốt trên mọi trình duyệt. Ví dụ:
+
+	<br>#box {
+	<br>  transition: margin-left 2s 0.5s ease-in-out;
+	<br>  -moz-transition: margin-left 2s 0.5s ease-in-out;
+	<br>  -webkit-transition: margin-left 2s 0.5s ease-in-out;
+	<br>}
+</body>
+</html>

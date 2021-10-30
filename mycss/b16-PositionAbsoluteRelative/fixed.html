@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS B16 - Position và Absolute – Relative</title>
+	<link rel="stylesheet" href="">
+	<style>
+		body{
+			 width: 960px;
+  			margin: 0 auto;
+		}
+		#menu{
+			position: fixed;
+			color: white;
+			background: #111;
+			list-style-type: none ;
+			padding: 0 32px;
+			width: 500px;
+		}
+
+		#menu li {
+			list-style-type: none;
+			line-height: 2em;
+			display: inline;
+			margin-right: 15px;
+		}
+	</style>
+</head>
+<body>
+	<em>Fixed</em>
+	
+	<ul id="menu">
+	  <li>Trang chủ</li>
+	  <li>Diễn đàn</li>
+	  <li>Tin tức</li>
+	  <li>Liên hệ</li>
+	</ul>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum id arcu at luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque rutrum nulla in sapien interdum rhoncus. Maecenas sit amet massa nulla. Donec vestibulum dignissim consequat. Vivamus sit amet molestie eros, in malesuada purus.</p>
+
+<p>Etiam quis leo mi. Phasellus dignissim quam turpis, vel venenatis urna tempus pulvinar. Donec in hendrerit lacus. Ut quis lobortis ex, tincidunt ultricies metus. Curabitur vestibulum faucibus pellentesque. Fusce id elit sit amet ex mattis condimentum. Vestibulum nec interdum purus. Phasellus tincidunt mauris purus, sed aliquam turpis euismod non.</p>
+
+<p>Sed porta finibus erat, non molestie odio fringilla eu. In hac habitasse platea dictumst. Nunc pharetra, ipsum in laoreet tincidunt, libero ligula bibendum ipsum, vitae aliquam lectus ante rutrum quam. Sed non nunc laoreet, sagittis nisi at, dignissim orci. Sed pharetra sed lacus a suscipit. Aenean efficitur risus magna, eget ornare orci lobortis non. Phasellus suscipit posuere velit, et interdum metus rhoncus at. Morbi lobortis malesuada enim, nec laoreet erat semper ut. Nunc vitae urna augue.</p>
+
+<p>Duis quis magna quis mi tristique imperdiet. Quisque ac odio sagittis, pulvinar augue id, tincidunt sapien. Aenean turpis odio, sollicitudin sed dictum sed, tincidunt non nulla.</p>
+	<br>Các giá trị của thuộc tính position
+
+	<br>Hiện tại position hỗ trợ cho một số giá trị như sau:
+
+	<br>relative: Dùng để thiết lập một phần tử sử dụng các thuộc tính position (xem ở dưới) mà không làm ảnh hưởng đến việc hiển thị ban đầu.
+	<br>absolute: Dùng để thiết lập vị trí của một phần tử nhưng nó sẽ luôn nằm trong một phần tử mẹ đang là relative.
+	<br>fixed: Hiển thị luôn đi theo trình duyệt khi cuộn trang.
+	<br>static: Đưa phần tử về hiển thị theo kiểu mặc định.
+	<br>Sau khi thiết lập một phần tử sử dụng position, chúng ta sẽ sử dụng thêm một số thuộc tính position để căn chỉnh vị trí của nó và giá trị là số kèm theo đơn vị, có 4 thuộc tính position là:top-bottom-left-right
+</body>
+</html>
